@@ -6,7 +6,7 @@ class SinglePostPage extends StatelessWidget {
   final wp.WordPress wordPress;
   final wp.Post post;
 
-  SinglePostPage({Key key, @required this.wordPress, @required this.post});
+  SinglePostPage({required Key key, required this.wordPress, required this.post});
 
   @override
   Widget build(BuildContext context) {
@@ -26,16 +26,16 @@ class PostWithComments extends StatefulWidget {
   final wp.WordPress wordPress;
   final wp.Post post;
 
-  PostWithComments({@required this.wordPress, @required this.post});
+  PostWithComments({required this.wordPress, required this.post});
 
   @override
   PostWithCommentsState createState() => PostWithCommentsState();
 }
 
 class PostWithCommentsState extends State<PostWithComments> {
-  String _content;
+  late String _content;
 
-  Future<List<wp.CommentHierarchy>> _comments;
+  late Future<List<wp.CommentHierarchy>> _comments;
 
   @override
   void initState() {
