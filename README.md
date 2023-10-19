@@ -236,7 +236,6 @@ Future<void> updateUser({@required int id, @required String username, @required 
   }
 ```
 
-
 ### 13. Delete Comment
 
 ```dart
@@ -282,7 +281,7 @@ Future<void> deleteComment({@required int id}) async {
   }).catchError((err) {
     print('Failed to upload Media: $err');
   });
-  int mediaID = media['id'];  
+  int mediaID = media['id'];
 }
 ```
 
@@ -291,8 +290,12 @@ Future<void> deleteComment({@required int id}) async {
 1. Implementing OAuth 2.0 authentication.
 
 ## Contributors
+
 - [Suraj Shettigar](https://github.com/SurajShettigar)
 - [Sachin Ganesh](https://github.com/SachinGanesh)
 - [Harm-Jan Roskam](https://github.com/harmjanr)
 - [Yahya Makarim](https://github.com/ymakarim)
 - [Garv Maggu](https://github.com/GarvMaggu)
+ 
+
+ Updated the http package
